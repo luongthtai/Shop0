@@ -1,0 +1,11 @@
+#selling {
+    #sellingList {
+        display: grid;
+        grid-template: 1fr 1fr / 1fr 1fr;
+        gap: 25px;
+
+         @media only screen and (max-width: 768px) {
+            grid-template: auto / 1fr;
+        }
+    }
+}

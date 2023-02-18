@@ -1,0 +1,47 @@
+#product {
+    position: relative;
+    overflow: hidden;
+
+    img {
+        object-fit: none;
+
+        @media only screen and (max-width: 992px) {
+            object-fit: contain;
+        }
+    }
+
+    #iconGroup {
+        width: fit-content;
+        cursor: pointer;
+
+        position: absolute;
+        top: 20%;
+        right: 10px;
+
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+
+        transform: translateX(100%);
+        transition: .3s;
+
+        div {
+            padding: 10px;
+            background-color: var(--bgColor);
+        }
+    }
+
+    #addCart {
+        width: fit-content;
+        padding: 8px 22px;
+
+        text-align: center;
+        cursor: pointer;
+    }
+
+    &:hover {
+        #iconGroup {
+            transform: translateX(0);
+        }
+    }
+}

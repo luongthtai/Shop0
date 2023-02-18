@@ -1,0 +1,17 @@
+#title {
+    div {
+        svg {
+            animation: animt .5s ease infinite alternate-reverse;
+        }
+
+        @keyframes animt {
+            from {
+                transform: translateX(0);
+            }
+
+            to {
+                transform: translateX(5px);
+            }
+        }
+    }
+}
