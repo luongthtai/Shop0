@@ -13,8 +13,8 @@ export default function HeroSection() {
       <div className='d-flex flex-column gap-4'>
         <div id={css.brands} className='gap-lg-4 gap-0'>
           <img src={bran1} alt='brand-1' />
-          <img src={bran2} alt='brand-2' />
-          <img src={bran3} alt='brand-3' />
+          <img src={bran2} alt='brand-2'/>
+          <img src={bran3} alt='brand-3'/>
         </div>
 
         <div className='row row-cols-lg-4 row-cols-1 px-lg-5 py-4 bg-white gap-5 gap-lg-0' data-aos="fade-up">

@@ -7,7 +7,6 @@ import BestSeller from './Section/BestSeller/BestSeller'
 import PopularSales from './Section/PopularSales/PopularSales'
 import NewArrivals from './Section/NewArrivals/NewArrivals'
 import PopularItems from './Section/PopularItems/PopularItems'
-import Discount from './Section/Discount/Discount'
 import Aos from 'aos'
 import 'aos/dist/aos.css'
 
@@ -18,7 +17,7 @@ Aos.init({
 export default function HomePage() {
   return (
     <>
-      <main className='py-5'>
+      <main className='pt-5'>
         <HeroSection />
         <GameWorld />
         <Brand />
@@ -27,7 +26,6 @@ export default function HomePage() {
         <PopularSales />
         <NewArrivals />
         <PopularItems />
-        <Discount />
       </main>
 
     </>

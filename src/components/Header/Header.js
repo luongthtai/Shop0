@@ -19,7 +19,7 @@ export default function Header() {
         <div className='container d-flex justify-content-between'>
           <div className='d-flex gap-4'>
             <Link to="/">Account</Link>
-            <Link to='/'>Track Order</Link>
+            <Link to='/trackorder'>Track Order</Link>
             <Link to='/'>Support</Link>
           </div>
 
@@ -51,20 +51,20 @@ export default function Header() {
           </form>
 
           <div className='d-flex gap-4' id={css.itemGroup}>
-            <div>
+            <Link to="#" className={css.icons}>
               <BsArrowRepeat className='fs-4' />
               <span className='bg-warning rounded-circle'>2</span>
-            </div>
+            </Link>
 
-            <div>
+            <Link to="#" className={css.icons}>
               <AiOutlineHeart className='fs-4' />
               <span className='bg-warning rounded-circle'>2</span>
-            </div>
+            </Link>
 
-            <div>
+            <Link to="/cart" className={css.icons}>
               <AiOutlineShopping className='fs-4' />
               <span className='bg-warning rounded-circle'>2</span>
-            </div>
+            </Link>
 
             <div>
               <AiOutlineUser className='fs-4' />
@@ -101,18 +101,18 @@ export default function Header() {
 
       <div id={css.headerSm} className='bg-white d-block d-lg-none container-fluid'>
         <div className='d-flex justify-content-between align-items-center py-2'>
-          <HiOutlineMenuAlt2 className='text-black fs-4' data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasWithBackdrop" />
+          <HiOutlineMenuAlt2 className='text-black fs-4' data-bs-toggle="offcanvas" href="#menu" aria-controls="offcanvasScrolling" />
 
           <h1 className='text-warning'>Shop0</h1>
 
-          <div>
+          <Link to="/cart" className={css.icons}>
             <AiOutlineShopping className='fs-4' />
             <span className='bg-warning rounded-circle'>2</span>
-          </div>
+          </Link>
         </div>
       </div>
 
-      <div class="offcanvas offcanvas-start" tabIndex="-1" id="offcanvasExample" aria-labelledby="offcanvasExample">
+      <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabIndex="-1" id="menu" aria-labelledby="menu">
         <div class="offcanvas-header">
           <div className='d-flex gap-3'>
             <div className={css.icons}>

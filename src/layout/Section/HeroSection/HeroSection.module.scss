@@ -20,5 +20,20 @@
                 grid-area: 2 / 3 / 3 / 4;
             }
         }
+        
+        @media only screen and (max-width: 992px) {
+            display: block;
+            
+            img {
+                object-fit: cover;
+
+                &:nth-child(2) {
+                    width: 50%;
+                }
+                &:nth-child(3) {
+                    width: 50%;
+                }
+            }
+        }
     }
 }

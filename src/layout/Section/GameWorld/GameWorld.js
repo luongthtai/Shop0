@@ -31,9 +31,9 @@ export default function GameWorld({ title, type, bgItem, imgItem }) {
                     </div>
                 </div>
 
-                <ProductItem img={imgItem}/>
-                <ProductItem img={imgItem}/>
-                <ProductItem img={imgItem}/>
+                <ProductItem img={imgItem} />
+                <ProductItem img={imgItem} />
+                <ProductItem img={imgItem} />
             </div>
         </section>
     )

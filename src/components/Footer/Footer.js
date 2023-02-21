@@ -5,7 +5,7 @@ import { FaFacebookF } from 'react-icons/fa'
 export default function Footer() {
     return (
         <footer className='container-lg container-pluid'>
-            <div className='text-center pb-5 border-bottom'>
+            <div className='text-center py-5 border-bottom'>
                 <h1>Shop0</h1>
             </div>
 

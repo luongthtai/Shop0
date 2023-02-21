@@ -7,11 +7,11 @@ import { BsArrowRepeat, BsArrowsFullscreen, BsHeart } from 'react-icons/bs'
 
 export default function ProductItem({ img }) {
     return (
-        <div data-aos="fade-up">
-            <div id={css.product} className='p-5 bg-white h-100'>
+        <div data-aos="fade-up" className='py-2 py-lg-0'>
+            <div id={css.product} className='bg-white mh-100 d-grid'>
                 <img src={img || image} alt='product' className='w-100' />
 
-                <div className='d-flex flex-column justify-content-between pt-3' id={css.content}>
+                <div className='d-grid gap-3 p-4 pt-0' id={css.content}>
                     <div className='text-warning'>
                         <GoStar />
                         <GoStar />

@@ -12,5 +12,10 @@
         
         position: absolute;
         top: 0;
+
+        img {
+            max-width: 100%;
+            object-fit: cover;
+        }
     }
 }

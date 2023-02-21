@@ -26,25 +26,21 @@
 }
 
 #headerSm {
-    div {
-        position: relative;
+    span {
+        position: absolute;
+        width: 20px;
+        height: 20px;
 
-        span {
-            position: absolute;
-            width: 20px;
-            height: 20px;
+        padding: 5px;
 
-            padding: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
 
-            display: flex;
-            justify-content: center;
-            align-items: center;
+        top: -10px;
+        right: -10px;
 
-            top: -10px;
-            right: -10px;
-
-            font-size: 10px;
-        }
+        font-size: 10px;
     }
 }
 
@@ -68,5 +64,3 @@
         font-size: 10px;
     }
 }
-
-

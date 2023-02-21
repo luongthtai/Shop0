@@ -5,7 +5,7 @@ export default function Discount() {
     return (
         <section id={css.discount}>
             <div className='container text-center py-4 overflow-hidden'>
-                <div className='d-grid gap-5 p-5'>
+                <div className='d-grid gap-5 p-md-5 p-0'>
                     <div data-aos="fade-up">
                         <h2 className='fw-bold'>Get <span className='text-warning'>20%</span> Off Discount Coupon</h2>
                         <p className='fs-5'>by Subscribe our Newsletter</p>
